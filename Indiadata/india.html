@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Dashboard Live Update</title>
+    <link rel="stylesheet" href="./india.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+</head>
+<body>
+    <div class="navbar" id="nav">
+        <span class="head" style="font-size: 24px;">COVID-19 Dashboard</span>
+        <div class="destop-view">
+            <a href="../index.html">World Dashboard</a>
+            <a href="./india.html">India Dashboard</a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776</a>
+    </div>
+    <div class="mobile-view" id="mobile">
+        <a href="../index.html">World Dashboard</a>
+            <a href="./india.html">India Dashboard</a>
+    </div>
+   
+    <div class="container" id="container-block">
+        <h2>COVID-19 India Dashboard</h2>
+        <div class="table-bar">
+            <div id="row-first" class="row-first col-1"></div>
+            <div id="row-middle" class="row-middle col-2">
+                <div id="countryChart" class="chart--container">
+                    <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
+                </div>
+            </div>
+            <div id="row-last" class="row-last col-3">
+                <label for="input1">Search State</label>
+                <p><input id="input1" type="text" onkeyup ="fun(event)" placeholder="EX-kolkata" style="
+                        width: 100%;
+                        border: none;
+                        height: 30px;
+                    "></p>
+                <div id="table"></div>
+            </div>
+        </div>
+        </div>
+    <div id="popup_menu" class="pop-container">
+        <div id="popup" class="pop-contant">
+        </div>
+     </div>
+     <div class="chart">
+        <div id="myChart" class="chart--container">
+            <a href="https://www.zingchart.com/" rel="noopener" class="zc-ref">Powered by ZingChart</a>
+          </div>
+     </div>
+   
+     <div class="footer">
+        <div id="mob" class="footer-class">Help Line NO. +91-11-23978046</div>
+        <div id="queries">Do you have any suggestion or query?
+            <div class="footer-class"> Mail Me At :- <a class="link" href="mailto:sahrohit842@gmail.com"
+                    target="_blank">sahrohit842@gmail.com</a> </div>
+        </div>
+        <div class="footer-class">Made<span class="material-icons material-icons-outlined" style="color: #2cef2c;">
+                favorite
+            </span> By:-<a class="link" href="https://www.linkedin.com/in/rohitkumar842/" target="_blank">Rohit
+                Kumar</a></div>
+        <div class="footer-class">Data Source:- <a class="link" href="https://www.covid19india.org/" target="_blank">
+                covid19india.org</a></div>
+    </div>
+    <script type="module" src="./india.js"></script>
+</body>
+</html>
